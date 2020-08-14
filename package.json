@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon --watch webpack.config.js --exec 'webpack-dev-server --mode development'",
     "build": "webpack --mode production"
   },
   "keywords": [],
@@ -11,7 +12,10 @@
   "license": "ISC",
   "devDependencies": {
     "html-webpack-plugin": "^4.3.0",
+    "nodemon": "^2.0.4",
     "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.1.1"
   }
 }
